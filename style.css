@@ -1,0 +1,67 @@
+*{
+  box-sizing: border-box;
+}
+/* grandezza del body */
+body{
+  width: 1100 px;
+  height: 900 px;
+  background-color: #001433;
+}
+/* grandezza del conteiner per i vari quadrati dei prodotti */
+.container{
+  width: 950px;
+  height: 635px;
+  background-color: white;
+}
+/* per mettere a destra "cuoricino quando il mouse va sul prodotto" */
+.right{
+  width:150px;
+  position:absolute;
+  right:40px;
+  top:300px;
+  color:white;
+}
+/* per i vari quadrati dove inseriremo i prodotti */
+section > .sezione{
+  width: 300px;
+  height: 300px;
+  background-color: #dcdee2;
+  display: inline-block;
+  position: relative;
+}
+.heart {
+  display: none;
+}
+/* per visualizzare il cuore  */
+img:hover + div {
+  display: block;
+  width: 300px;
+  position: absolute;
+  bottom:0;
+  left:50%;
+  color:red;
+  font-size: 30px;
+}
+/* lascio un margine a sinistra */
+section > .left{
+  margin-left: 20px;
+  margin-top: 10px;
+}
+/* per gli sconti */
+div > .sale{
+  position: absolute;
+  background-color:green;
+  right: 0;
+}
+/* per gli unici due rossi */
+div > .red{
+  background-color: red;
+}
+/* per le immagini dei prodotti */
+img{
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  width: 170px;
+  height: 210px;
+}
